@@ -22,4 +22,4 @@ function destructivelyDeleteFromObjectByKey(object, key) {
   return object
 }
 
-console.log(updateObjectWithKeyAndValue(recipes, soup, "water"))
+console.log(updateObjectWithKeyAndValue(recipes, 'soup', "water"))
