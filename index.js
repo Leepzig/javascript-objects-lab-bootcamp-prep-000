@@ -11,12 +11,14 @@ function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
 }
 
 function deleteFromObjectByKey(object, key) {
-  var newObject = 
+  var newObject = Object.assign({}, object)
+  delete newObject[key]
   
 }
 
 function destructivelyDeleteFromObjectByKey(object, key) {
-  
+  delete object[key]
+  return object
 }
 
 console.log(updateObjectWithKeyAndValue(recipes, soup, "water"))
